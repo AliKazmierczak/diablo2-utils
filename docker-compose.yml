@@ -1,7 +1,7 @@
 version: "3"
 services:
-  webclient:
-    container_name: webclient
+  d2speedrun-utils:
+    container_name: d2speedrun-utils
     restart: unless-stopped
     build:
       dockerfile: Dockerfile
@@ -10,8 +10,8 @@ services:
         SSH_PRIVATE_KEY: ${SSH_PRIVATE_KEY}
     volumes:
       - ./src:/usr/src/service
-    working_dir: /usr/src/service/src
+    working_dir: /usr/src/service
     ports:
       - "3000:3000"
     command: >
-      sh -c "tail -f /dev/null"
+      sh -c "npm start"

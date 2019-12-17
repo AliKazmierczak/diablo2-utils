@@ -1,6 +1,6 @@
 version: '2'
 services:
-  build_webclient:
+  build_d2speedrun:
     build:
       dockerfile: Dockerfile
       context: .
