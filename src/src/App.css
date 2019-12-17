@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-diablo {
+  background-color: #801336;
+}
